@@ -1,2 +1,2 @@
-f.tptp
-data.pickle
+*.tptp
+*.pickle
