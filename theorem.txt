@@ -1,0 +1,83 @@
+theorem #0
+(a).=>(a).
+fof('(a)',axiom,(a)).
+fof('(a)',conjecture,(a)).
+Found
+# Scanning for AC axioms
+#cnf(i_0_1, plain, (a)).
+# Proof found!
+# SZS status Theorem
+# SZS output start CNFRefutation
+fof(c_0_2, negated_conjecture, ~a, inference(fof_simplification,[status(thm)],[inference(assume_negation,[status(cth)],['(a)'])])).
+fof(c_0_3, negated_conjecture, ~a, inference(fof_nnf,[status(thm)],[c_0_2])).
+cnf(c_0_4, negated_conjecture, (~a), inference(split_conjunct,[status(thm)],[c_0_3])).
+cnf(c_0_5, plain, (a), inference(split_conjunct,[status(thm)],['(a)'])).
+cnf(c_0_6, negated_conjecture, ($false), inference(cn,[status(thm)],[inference(rw,[status(thm)],[c_0_4, c_0_5])]), ['proof']).
+# SZS output end CNFRefutation
+theorem #1
+(a).=>(a|a).
+fof('(a)',axiom,(a)).
+fof('(a|a)',conjecture,(a|a)).
+Found
+# Scanning for AC axioms
+#cnf(i_0_1, plain, (a)).
+# Proof found!
+# SZS status Theorem
+# SZS output start CNFRefutation
+fof(c_0_2, negated_conjecture, ~a, inference(fof_simplification,[status(thm)],[inference(assume_negation,[status(cth)],['(a|a)'])])).
+fof(c_0_3, negated_conjecture, ~a, inference(fof_nnf,[status(thm)],[c_0_2])).
+cnf(c_0_4, negated_conjecture, (~a), inference(split_conjunct,[status(thm)],[c_0_3])).
+cnf(c_0_5, plain, (a), inference(split_conjunct,[status(thm)],['(a)'])).
+cnf(c_0_6, negated_conjecture, ($false), inference(cn,[status(thm)],[inference(rw,[status(thm)],[c_0_4, c_0_5])]), ['proof']).
+# SZS output end CNFRefutation
+theorem #2
+(a).=>(a|~a).
+fof('(a)',axiom,(a)).
+fof('(a|~a)',conjecture,(a|~a)).
+Found
+# Scanning for AC axioms
+#cnf(i_0_1, plain, (a)).
+##
+# Proof found!
+# SZS status Theorem
+# SZS output start CNFRefutation
+fof(c_0_2, negated_conjecture, ~((a|~a)), inference(fof_simplification,[status(thm)],[inference(assume_negation,[status(cth)],['(a|~a)'])])).
+fof(c_0_3, negated_conjecture, (~a&a), inference(fof_nnf,[status(thm)],[inference(fof_nnf,[status(thm)],[c_0_2])])).
+cnf(c_0_4, negated_conjecture, (~a), inference(split_conjunct,[status(thm)],[c_0_3])).
+cnf(c_0_5, plain, (a), inference(split_conjunct,[status(thm)],['(a)'])).
+cnf(c_0_6, negated_conjecture, ($false), inference(cn,[status(thm)],[inference(rw,[status(thm)],[c_0_4, c_0_5])]), ['proof']).
+# SZS output end CNFRefutation
+theorem #3
+(a).=>(a|b).
+fof('(a)',axiom,(a)).
+fof('(a|b)',conjecture,(a|b)).
+Found
+# Scanning for AC axioms
+#cnf(i_0_1, plain, (a)).
+# Proof found!
+# SZS status Theorem
+# SZS output start CNFRefutation
+fof(c_0_2, negated_conjecture, ~((a|b)), inference(assume_negation,[status(cth)],['(a|b)'])).
+fof(c_0_3, negated_conjecture, (~a&~b), inference(fof_nnf,[status(thm)],[inference(fof_nnf,[status(thm)],[c_0_2])])).
+cnf(c_0_4, negated_conjecture, (~a), inference(split_conjunct,[status(thm)],[c_0_3])).
+cnf(c_0_5, plain, (a), inference(split_conjunct,[status(thm)],['(a)'])).
+cnf(c_0_6, negated_conjecture, ($false), inference(cn,[status(thm)],[inference(rw,[status(thm)],[c_0_4, c_0_5])]), ['proof']).
+# SZS output end CNFRefutation
+theorem #4
+(a).=>(a|~b).
+fof('(a)',axiom,(a)).
+fof('(a|~b)',conjecture,(a|~b)).
+Found
+# Scanning for AC axioms
+#cnf(i_0_1, plain, (a)).
+#cnf(i_0_2, negated_conjecture, (b)).
+# Proof found!
+# SZS status Theorem
+# SZS output start CNFRefutation
+fof(c_0_2, negated_conjecture, ~((a|~b)), inference(fof_simplification,[status(thm)],[inference(assume_negation,[status(cth)],['(a|~b)'])])).
+fof(c_0_3, negated_conjecture, (~a&b), inference(fof_nnf,[status(thm)],[inference(fof_nnf,[status(thm)],[c_0_2])])).
+cnf(c_0_4, negated_conjecture, (~a), inference(split_conjunct,[status(thm)],[c_0_3])).
+cnf(c_0_5, plain, (a), inference(split_conjunct,[status(thm)],['(a)'])).
+cnf(c_0_6, negated_conjecture, ($false), inference(cn,[status(thm)],[inference(rw,[status(thm)],[c_0_4, c_0_5])]), ['proof']).
+# SZS output end CNFRefutation
+", stderr=b'')
