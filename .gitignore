@@ -2,4 +2,5 @@
 *.pickle
 *.png
 *.gzip
-*.txt
+theorem.txt
+theorem_original.txt
