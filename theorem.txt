@@ -8,6 +8,8 @@ Found
 # Proof found!
 # SZS status Theorem
 # SZS output start CNFRefutation
+fof('(a)', conjecture, a, file('f.tptp', '(a)')).
+fof('(a)', axiom, a, file('f.tptp', '(a)')).
 fof(c_0_2, negated_conjecture, ~a, inference(fof_simplification,[status(thm)],[inference(assume_negation,[status(cth)],['(a)'])])).
 fof(c_0_3, negated_conjecture, ~a, inference(fof_nnf,[status(thm)],[c_0_2])).
 cnf(c_0_4, negated_conjecture, (~a), inference(split_conjunct,[status(thm)],[c_0_3])).
@@ -24,6 +26,8 @@ Found
 # Proof found!
 # SZS status Theorem
 # SZS output start CNFRefutation
+fof('(a|a)', conjecture, (a|a), file('f.tptp', '(a|a)')).
+fof('(a)', axiom, a, file('f.tptp', '(a)')).
 fof(c_0_2, negated_conjecture, ~a, inference(fof_simplification,[status(thm)],[inference(assume_negation,[status(cth)],['(a|a)'])])).
 fof(c_0_3, negated_conjecture, ~a, inference(fof_nnf,[status(thm)],[c_0_2])).
 cnf(c_0_4, negated_conjecture, (~a), inference(split_conjunct,[status(thm)],[c_0_3])).
@@ -41,6 +45,8 @@ Found
 # Proof found!
 # SZS status Theorem
 # SZS output start CNFRefutation
+fof('(a|~a)', conjecture, (a|~(a)), file('f.tptp', '(a|~a)')).
+fof('(a)', axiom, a, file('f.tptp', '(a)')).
 fof(c_0_2, negated_conjecture, ~((a|~a)), inference(fof_simplification,[status(thm)],[inference(assume_negation,[status(cth)],['(a|~a)'])])).
 fof(c_0_3, negated_conjecture, (~a&a), inference(fof_nnf,[status(thm)],[inference(fof_nnf,[status(thm)],[c_0_2])])).
 cnf(c_0_4, negated_conjecture, (~a), inference(split_conjunct,[status(thm)],[c_0_3])).
@@ -57,6 +63,8 @@ Found
 # Proof found!
 # SZS status Theorem
 # SZS output start CNFRefutation
+fof('(a|b)', conjecture, (a|b), file('f.tptp', '(a|b)')).
+fof('(a)', axiom, a, file('f.tptp', '(a)')).
 fof(c_0_2, negated_conjecture, ~((a|b)), inference(assume_negation,[status(cth)],['(a|b)'])).
 fof(c_0_3, negated_conjecture, (~a&~b), inference(fof_nnf,[status(thm)],[inference(fof_nnf,[status(thm)],[c_0_2])])).
 cnf(c_0_4, negated_conjecture, (~a), inference(split_conjunct,[status(thm)],[c_0_3])).
@@ -74,6 +82,8 @@ Found
 # Proof found!
 # SZS status Theorem
 # SZS output start CNFRefutation
+fof('(a|~b)', conjecture, (a|~(b)), file('f.tptp', '(a|~b)')).
+fof('(a)', axiom, a, file('f.tptp', '(a)')).
 fof(c_0_2, negated_conjecture, ~((a|~b)), inference(fof_simplification,[status(thm)],[inference(assume_negation,[status(cth)],['(a|~b)'])])).
 fof(c_0_3, negated_conjecture, (~a&b), inference(fof_nnf,[status(thm)],[inference(fof_nnf,[status(thm)],[c_0_2])])).
 cnf(c_0_4, negated_conjecture, (~a), inference(split_conjunct,[status(thm)],[c_0_3])).
