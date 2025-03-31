@@ -1,2 +1,6 @@
 *.tptp
 *.pickle
+*.png
+*.gzip
+theorem.txt
+theorem_original.txt
