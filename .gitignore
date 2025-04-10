@@ -7,3 +7,4 @@ theorem_original.txt
 non_theorem.txt
 non_theorem_parsed.txt
 theorem_parsed.txt
+theorem_parsed.json
