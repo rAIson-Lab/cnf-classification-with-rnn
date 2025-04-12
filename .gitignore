@@ -9,3 +9,6 @@ non_theorem_parsed.txt
 theorem_parsed.txt
 theorem_parsed.json
 non_theorem_parsed.json
+theorem_nl.txt
+theorem_nl.json
+theorem_nl.json.gz
