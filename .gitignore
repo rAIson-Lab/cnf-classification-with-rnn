@@ -12,3 +12,9 @@ non_theorem_parsed.json
 theorem_nl.txt
 theorem_nl.json
 theorem_nl.json.gz
+theorem_nl_alpaca.json
+non_theorum.pickle.gzip:Zone.Identifier
+.gitignore
+theorum.pickle.gzip:Zone.Identifier
+.gitignore
+output_file.json.gz
